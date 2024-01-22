@@ -1,3 +1,3 @@
 #!/bin/bash
-#
-docker build -t cloud_computing/lab:latest -f Dockerfile .
+
+docker build -t cc/lab:latest -f Dockerfile .

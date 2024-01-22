@@ -18,7 +18,7 @@ El archivo `Dockerfile` define los pasos necesarios para construir la imagen de 
 El archivo `Aptfile` contiene la lista de paquetes de Ubuntu que se instalarán en la imagen de Docker. Estos paquetes pueden modificarse según las necesidades del proyecto.
 
 ### Scripts de Construcción y Ejecución
-- `build.sh`: Este script facilita la construcción de la imagen de Docker. Ejecute `./build.sh` para crear la imagen con la etiqueta `cloud_computing/lab:latest`.
+- `build.sh`: Este script facilita la construcción de la imagen de Docker. Ejecute `./build.sh` para crear la imagen con la etiqueta `cc/lab:latest`.
 - `run.sh`: Utilice este script para ejecutar un contenedor basado en la imagen creada anteriormente. Ejecute `./run.sh` para iniciar un contenedor llamado `webterminal` que escucha en el puerto 8080.
 
 ## Cómo usar
@@ -41,7 +41,7 @@ Esto iniciará un contenedor con el terminal basado en la web. Luego, abra su na
 Si está utilizando Docker Desktop en su sistema, siga estos pasos:
 
 1. Construya la imagen como se indicó anteriormente usando `./build.sh`.
-2. Ejecute un contenedor desde Docker Desktop con la imagen `cloud_computing/lab:latest` publicando el puerto 8080.
+2. Ejecute un contenedor desde Docker Desktop con la imagen `cc/lab:latest` publicando el puerto 8080.
 3. Luego, abra su navegador web y vaya a `http://localhost:8080` para acceder al terminal basado en la web.
 
 Esta imagen de Docker proporciona un entorno interactivo en línea de comandos que puede ser útil para enseñar o aprender sobre herramientas de línea de comandos y tecnologías relacionadas.
