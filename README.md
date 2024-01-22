@@ -1,4 +1,4 @@
-# Dockerfile y README para Web-based Terminal en Docker
+# Docker lab
 ## Introducción
 Este proyecto proporciona un Dockerfile y scripts para construir y ejecutar una imagen de Docker que ofrece un terminal basado en la web. El terminal web permite a los estudiantes interactuar con un entorno de línea de comandos en un contenedor Docker. Este README explicará el contenido del Dockerfile, el archivo Aptfile y cómo usar la imagen de Docker, ya sea a través de comandos de construcción y ejecución o mediante Docker Desktop.
 
