@@ -1,0 +1,12 @@
+build-essential
+ca-certificates
+cmake
+curl
+git
+gpg
+libjson-c-dev
+libwebsockets-dev
+lsb-release
+ttyd
+unzip
+wget
