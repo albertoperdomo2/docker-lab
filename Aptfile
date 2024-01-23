@@ -9,4 +9,5 @@ libwebsockets-dev
 lsb-release
 ttyd
 unzip
+vim
 wget

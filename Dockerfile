@@ -14,8 +14,7 @@ RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get -yq dist-upgrad
 # install AWS CLI
 RUN curl -k "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
         && unzip awscliv2.zip \
-        && ./aws/install \
-        && rm -r aws awscli2.zip
+        && ./aws/install 
 
 # install terraform
 RUN wget --no-check-certificate -qO - https://apt.releases.hashicorp.com/gpg | gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg \
