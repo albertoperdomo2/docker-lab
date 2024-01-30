@@ -35,7 +35,7 @@ El archivo `Aptfile` contiene la lista de paquetes de Ubuntu que se instalarán 
    ./run.sh
    ```
 
-Esto iniciará un contenedor con el terminal basado en la web. Luego, abra su navegador web y vaya a `http://localhost:8080` para acceder al terminal basado en la web.
+Esto iniciará un contenedor con el terminal basado en la web. Luego, abra su navegador web y vaya a [http://localhost:8080](http://localhost:8080) para acceder al terminal basado en la web.
 
 ### Usar Docker Desktop
 Si está utilizando Docker Desktop en su sistema, siga estos pasos:
