@@ -35,6 +35,19 @@ El archivo `Aptfile` contiene la lista de paquetes de Ubuntu que se instalarán 
    ./run.sh
    ```
 
+En el caso de estar en Windows, los scripts de bash no se pueden ejecutar, entonces en su defecto, utilizaremos lo siguiente:
+1. Para construir la imagen de Docker, desde el Terminal (Simbolo del sistema), y estando presente dentro de esta carpeta (para ello podemos ejecutar el comando `dir` y tendriamos que ver todos los ficheros de este repositorio, y en caso de que no, movernos a ese directorio usando `cd`), ejecutamos el siguiente comando:
+
+   ```bash
+   docker build -t cc/lab:latest -f Dockerfile .
+   ```
+
+2. Una vez el proceso de build ha terminado, arrancamos el contenedor (sustituir `MYUSER` por tu nombre de usuario, y el `path` por la ruta hasta el directorio donde este esta carpeta):
+
+   ```bash
+   docker run -it -p 8080:8080 -v /c/Users/MYUSER/path/:/workspace --name webterminal cc/lab:latest
+   ```
+
 Esto iniciará un contenedor con el terminal basado en la web. Luego, abra su navegador web y vaya a [http://localhost:8080](http://localhost:8080) para acceder al terminal basado en la web.
 
 ### Usar Docker Desktop
